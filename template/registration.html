@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form method='POST' action=".">
+    {% csrf_token %}
+    username: <input type="text" name='username'><br>
+    password: <input type="password" name='password'><br>
+    USER TYPE: <input type="radio" name="group" value="1">Admin<br>
+    <input type="radio" name="group" value="2">Teacher<br>
+    <input type="radio" name="group" value="3">Parents<br>
+    <button type="submit"> Submit </button>
+    <form>
+<body>
+</html>
